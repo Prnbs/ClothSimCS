@@ -10,6 +10,42 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\src\Api.h" />
+    <ClInclude Include="Engine\src\Camera.h" />
+    <ClInclude Include="Engine\src\Cloth.h" />
+    <ClInclude Include="Engine\src\D3D.h" />
+    <ClInclude Include="Engine\src\Engine.h" />
+    <ClInclude Include="Engine\src\Font.h" />
+    <ClInclude Include="Engine\src\FontShader.h" />
+    <ClInclude Include="Engine\src\Input.h" />
+    <ClInclude Include="Engine\src\Light.h" />
+    <ClInclude Include="Engine\src\modelclass.h" />
+    <ClInclude Include="Engine\src\Renderer.h" />
+    <ClInclude Include="Engine\src\Solver.h" />
+    <ClInclude Include="Engine\src\TessellationShader.h" />
+    <ClInclude Include="Engine\src\Text.h" />
+    <ClInclude Include="Engine\src\Texture.h" />
+    <ClInclude Include="Engine\src\TextureShader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\src\Camera.cpp" />
+    <ClCompile Include="Engine\src\Cloth.cpp" />
+    <ClCompile Include="Engine\src\D3D.cpp" />
+    <ClCompile Include="Engine\src\Engine.cpp" />
+    <ClCompile Include="Engine\src\Font.cpp" />
+    <ClCompile Include="Engine\src\FontShader.cpp" />
+    <ClCompile Include="Engine\src\Input.cpp" />
+    <ClCompile Include="Engine\src\Light.cpp" />
+    <ClCompile Include="Engine\src\main.cpp" />
+    <ClCompile Include="Engine\src\modelclass.cpp" />
+    <ClCompile Include="Engine\src\Renderer.cpp" />
+    <ClCompile Include="Engine\src\Solver.cpp" />
+    <ClCompile Include="Engine\src\TessellationShader.cpp" />
+    <ClCompile Include="Engine\src\Text.cpp" />
+    <ClCompile Include="Engine\src\Texture.cpp" />
+    <ClCompile Include="Engine\src\TextureShader.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{60844963-6ED5-4D37-9221-DFB6096287B8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,42 +113,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Api.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Camera.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Cloth.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\D3D.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Engine.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Font.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\FontShader.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Input.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Light.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\modelclass.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Renderer.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Solver.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\TessellationShader.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Text.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Texture.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\TextureShader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Camera.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Cloth.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\D3D.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Engine.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Font.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\FontShader.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Input.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Light.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\modelclass.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Renderer.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Solver.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\TessellationShader.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Text.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\Texture.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\DX11Cloth-master\DX11Cloth-master\Engine\src\TextureShader.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
