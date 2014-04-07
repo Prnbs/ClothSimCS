@@ -354,9 +354,11 @@ void Cloth::initializeBendSprings()
 		if(((i+1)%m_width) != 0)
 		{
 			Spring s;
+			Particle &p1 = m_particles[i];
+			Particle &p2 = m_particles[i+2];
 			// Create horizontal bend springs
-			s.p1 = &m_particles[i];
-			s.p2 = &m_particles[i+2];
+			s.p1 = &p1;
+			s.p2 = &p2;
 
 			pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 
@@ -370,9 +372,11 @@ void Cloth::initializeBendSprings()
 	for(int i = 0; i < numOfBendSpringsVert; ++i)
 	{
 		Spring s;
+		Particle &p1 = m_particles[i];
+		Particle &p2 = m_particles[i + (m_width * 2)];
 		// Create horizontal bend springs
-		s.p1 = &m_particles[i];
-		s.p2 = &m_particles[i+(m_width*2)];
+		s.p1 = &p1;
+		s.p2 = &p2;
 
 		pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 
@@ -389,10 +393,11 @@ void Cloth::initializeShearSprings()
 		if( ( (i+1)%m_width) != 0)
 		{
 			Spring s;
-
 			// Create downward shear springs
-			s.p1 = &m_particles[i];
-			s.p2 = &m_particles[i+(m_width+1)];
+			Particle &p1 = m_particles[i];
+			Particle &p2 = m_particles[i + (m_width + 1)];
+			s.p1 = &p1;
+			s.p2 = &p2;
 
 			pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 
@@ -409,8 +414,11 @@ void Cloth::initializeShearSprings()
 		{
 			// Create upward shear springs
 			Spring s;
-			s.p1 = &m_particles[i];
-			s.p2 = &m_particles[i-(m_width-1)];
+			Particle &p1 = m_particles[i];
+			Particle &p2 = m_particles[i - (m_width - 1)];
+			s.p1 = &p1;
+			s.p2 = &p2;
+
 
 			pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 
@@ -428,8 +436,10 @@ void Cloth::initializeStructSprings()
 		if((i+1)%m_width != 0)
 		{
 			Spring s;
-			s.p1 = &m_particles[i];
-			s.p2 = &m_particles[i+1];
+			Particle &p1 = m_particles[i];
+			Particle &p2 = m_particles[i + 1];
+			s.p1 = &p1;
+			s.p2 = &p2;
 			pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 			s.restLength = D3DXVec3Length(&dist);
 			s.damping = 100.0f;
@@ -443,8 +453,10 @@ void Cloth::initializeStructSprings()
 		if(i+m_width < (int)m_particles.size())
 		{
 			Spring s;
-			s.p1 = &m_particles[i];
-			s.p2 = &m_particles[i+m_width];
+			Particle &p1 = m_particles[i];
+			Particle &p2 = m_particles[i + m_width];
+			s.p1 = &p1;
+			s.p2 = &p2;
 			pjs::Vec3 dist = s.p1->pos - s.p2->pos;
 			s.restLength = D3DXVec3Length(&dist);
 			s.damping = 100.0f;

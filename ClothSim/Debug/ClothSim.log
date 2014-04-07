@@ -1,33 +1,57 @@
-﻿Build started 4/5/2014 9:28:33 AM.
+﻿Build started 4/7/2014 6:48:39 AM.
      1>Project "C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\ClothSim\ClothSim.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Engine\src\FontShader.cpp Engine\src\Renderer.cpp Engine\src\TessellationShader.cpp Engine\src\Text.cpp Engine\src\TextureShader.cpp
-         TextureShader.cpp
-         Text.cpp
-         TessellationShader.cpp
-         Renderer.cpp
-         FontShader.cpp
-         Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\Debug\ClothSim.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\Debug\ClothSim.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\Debug\ClothSim.lib" /MACHINE:X86 Debug\Camera.obj
-         Debug\Cloth.obj
-         Debug\D3D.obj
-         Debug\Engine.obj
-         Debug\Font.obj
-         Debug\FontShader.obj
-         Debug\Input.obj
-         Debug\Light.obj
-         Debug\main.obj
-         Debug\modelclass.obj
-         Debug\Renderer.obj
-         Debug\Solver.obj
-         Debug\TessellationShader.obj
-         Debug\Text.obj
-         Debug\Texture.obj
-         Debug\TextureShader.obj
-         ClothSim.vcxproj -> C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\Debug\ClothSim.exe
-     1>Done Building Project "C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\ClothSim\ClothSim.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Engine\src\ComputeShader.cpp
+         ComputeShader.cpp
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(71): error C2660: 'ComputeShader::renderShader' : function does not take 1 arguments
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(147): error C2065: 'vertexShaderBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(147): error C2227: left of '->GetBufferPointer' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(147): error C2227: left of '->GetBufferSize' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(148): error C2660: 'ID3D11Device::CreateInputLayout' : function does not take 3 arguments
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(289): error C2065: 'MatrixBufferType' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(289): error C2065: 'matData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(290): error C2065: 'TessellationBufferType' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(290): error C2065: 'tessData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(291): error C2065: 'LightBufferType' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(291): error C2065: 'lightData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(302): error C2065: 'm_lightBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(309): error C2065: 'lightData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(309): error C2065: 'LightBufferType' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(309): error C2059: syntax error : ')'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(312): error C2065: 'lightData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(312): error C2227: left of '->ambientColor' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(312): error C2065: '_ambientColor' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(313): error C2065: 'lightData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(313): error C2227: left of '->diffuseColor' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(313): error C2065: '_lightColor' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(314): error C2065: 'lightData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(314): error C2227: left of '->lightDir' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(314): error C2065: '_lightDirection' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(317): error C2065: 'm_lightBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(323): error C2065: 'm_lightBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(326): error C2065: 'm_tessellationBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(333): error C2065: 'tessData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(333): error C2065: 'TessellationBufferType' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(333): error C2059: syntax error : ')'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(336): error C2065: 'tessData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(336): error C2227: left of '->tessellationAmount' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(337): error C2065: 'tessData' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(337): error C2227: left of '->padding' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(340): error C2065: 'm_tessellationBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(346): error C2065: 'm_tessellationBuffer' : undeclared identifier
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(354): error C2511: 'void ComputeShader::renderShader(ID3D11DeviceContext *)' : overloaded member function not found in 'ComputeShader'
+                 c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.h(23) : see declaration of 'ComputeShader'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(356): error C2597: illegal reference to non-static member 'ComputeShader::m_layout'
+     1>c:\users\prana_000\documents\visual studio 2013\projects\clothsim\clothsimcs\clothsim\engine\src\computeshader.cpp(359): error C2597: illegal reference to non-static member 'ComputeShader::m_computeShader'
+     1>Done Building Project "C:\Users\prana_000\Documents\Visual Studio 2013\Projects\ClothSim\ClothSimCS\ClothSim\ClothSim.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:14.39
+Time Elapsed 00:00:05.31

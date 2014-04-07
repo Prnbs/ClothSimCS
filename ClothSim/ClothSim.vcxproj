@@ -14,6 +14,7 @@
     <ClInclude Include="Engine\src\Api.h" />
     <ClInclude Include="Engine\src\Camera.h" />
     <ClInclude Include="Engine\src\Cloth.h" />
+    <ClInclude Include="Engine\src\ComputeShader.h" />
     <ClInclude Include="Engine\src\D3D.h" />
     <ClInclude Include="Engine\src\Engine.h" />
     <ClInclude Include="Engine\src\Font.h" />
@@ -31,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="Engine\src\Camera.cpp" />
     <ClCompile Include="Engine\src\Cloth.cpp" />
+    <ClCompile Include="Engine\src\ComputeShader.cpp" />
     <ClCompile Include="Engine\src\D3D.cpp" />
     <ClCompile Include="Engine\src\Engine.cpp" />
     <ClCompile Include="Engine\src\Font.cpp" />
